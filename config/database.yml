@@ -1,5 +1,8 @@
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: postgresql
+  database: postgres
   pool: 5
   timeout: 5000
+  host: db
+  port: 5432
+  username: postgres

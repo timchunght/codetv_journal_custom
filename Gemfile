@@ -31,6 +31,7 @@ end
 group :production do
   gem 'unicorn'
   gem 'execjs'
+  gem 'pg'
 end
 group :test do
   gem 'capybara'

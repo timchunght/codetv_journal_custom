@@ -9,7 +9,7 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 RUN rm /etc/nginx/sites-enabled/default
 RUN mkdir -p /var/www
 RUN /bin/bash -l -c "gem install bundler --no-ri --no-rdoc"
-
+RUN apt-get install -y libpq-dev
 WORKDIR /tmp
 ADD Gemfile Gemfile
 ADD Gemfile.lock Gemfile.lock
